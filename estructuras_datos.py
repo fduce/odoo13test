@@ -35,4 +35,4 @@ print(dict_country.keys())
 print(dict_country.values())
 
 for key,value in dict_country.items():
-    print("key {} - value {}",format(key.get("es"),value.get())
+    print(key, ": ", value)
