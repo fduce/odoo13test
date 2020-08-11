@@ -1,3 +1,4 @@
+#Listas
 secuencia = [1,2,3,4,5,6]
 print(secuencia)
 print(secuencia[0])
@@ -14,6 +15,7 @@ paises = [
      "Perú"
  ]
 print(paises)
+print(type(paises))
 
 for pais in paises:
     print(pais)
@@ -36,3 +38,21 @@ print(dict_country.values())
 
 for key,value in dict_country.items():
     print(key, ": ", value)
+
+print("values: ", sorted(dict_country.values()))
+print("keys: ", sorted(dict_country.keys()))
+print("dictionary: ", sorted(dict_country))
+print("items: ", sorted(dict_country.items()))
+
+#Sets
+paises_set = ({
+    "España",
+    "Ecuador",
+    "Uruguay",
+    "Estados Unidos",
+    "Argentina",
+    "Perú",
+    "Perú"
+})
+print(paises_set)
+print(type(paises_set))
