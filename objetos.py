@@ -1,3 +1,4 @@
+#Objeto
 class Person():
     name = "" #Attribute 1
     age = "" #Attribute 2
@@ -16,3 +17,16 @@ class Person():
 p1 = Person("Juan", 18)
 
 print(p1.name, " > ", p1.age)
+
+#Herencia
+class User(Person):
+    def __init__(self, color, name=None, age=None):
+        super(User, self).__init__(color)
+        self.age = age
+        self.name = name
+        self.color_pelo = color
+
+user1 = User("Rojo", "Juan", 18)
+#user1.age = 19
+print(user1)
+print(user1.color_pelo, user1.age, user1.name)
